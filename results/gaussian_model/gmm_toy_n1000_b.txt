@@ -1,0 +1,17 @@
+energy share of class-mean differences in the low band: 0.9607323030852187
+FD noise floor (two exact "not k" sets): 58.90   |  reading k on exact not-k samples: 0.0000
+arm                           k left      FD   kept  changed near kept
+no push                        9.90%   63.88   1.00     0.00      1.00
+both 0.5                       2.40%   83.94   0.24     0.52      0.40
+both 1                         0.30%  158.91   0.03     0.69      0.14
+high 2, sigma>=0.8             3.60%   77.48   0.36     0.41      0.52
+high 2, sigma<0.8              4.60%   80.88   0.46     0.48      0.57
+low 1, sigma>=0.8              1.50%  127.48   0.15     0.40      0.29
+exact (1,1)                    0.20%   63.88   0.02     0.08      0.78
+exact (2,1)                    0.00%   64.56   0.00     0.13      0.61
+exact (1,2)                    0.00%   63.96   0.00     0.11      0.68
+exact (2,2)                    0.00%   64.70   0.00     0.15      0.53
+exact (1.5,1.5)                0.00%   64.18   0.00     0.12      0.64
+exact (1,0)                    5.40%   63.78   0.55     0.06      0.83
+exact (0,1)                    1.10%   63.90   0.11     0.04      0.90
+exact (0.5,0.5)                3.20%   63.75   0.32     0.05      0.88

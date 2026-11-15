@@ -1,0 +1,32 @@
+# created by scripts/setup.sh and by the experiments
+src/edm/
+src/ckpt/
+src/out/
+*.done
+*.tar
+freqcfg.zip
+samples_*.npz
+cifar-10-python.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+~$*
+
+# LaTeX
+*.aux
+*.toc
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+proposal/*.log
+report/*.log
+
+# editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

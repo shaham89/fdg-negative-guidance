@@ -1,0 +1,11 @@
+# Python 3.10 or newer with a CUDA build of PyTorch (the runs used Python 3.12 on an A10, and Colab's default image on an A100).
+torch
+torchvision
+numpy
+scipy
+pillow
+matplotlib
+torch-fidelity==0.4.0   # FID and Inception Score
+kornia                  # only for the Laplacian-pyramid arm (gen.py pyramid)
+requests                # needed by NVIDIA's edm code (dnnlib) to unpickle the networks
+setuptools              # provides distutils on Python 3.12, which dnnlib still imports

@@ -1,0 +1,51 @@
+=== 20:21:01 cfg --w 1
+  File "~/anaconda3/envs/env/lib/python3.12/site-packages/torch/hub.py", line 376, in _check_repo_is_trusted
+    response = input(
+               ^^^^^^
+EOFError: EOF when reading a line
+=== 20:45:03 cfg --w 1.5
+  File "~/anaconda3/envs/env/lib/python3.12/site-packages/torch/hub.py", line 376, in _check_repo_is_trusted
+    response = input(
+               ^^^^^^
+EOFError: EOF when reading a line
+=== 21:00:17 cfg --w 2
+ "class_acc": 0.989,
+ "fid": 6.678990128979422,
+ "is": 9.87825977530034
+}
+=== 21:19:42 cfg --w 3
+ "fid": 9.983772695757807,
+ "is": 9.698577968736666,
+ "class_acc": 0.9909
+}
+=== 21:37:06 cfg --w 4
+ "fid": 12.799054583758448,
+ "is": 9.63731544146346,
+ "class_acc": 0.9890999794006348
+}
+=== 21:53:22 cfg --w 6
+ "fid": 26.74567390355952,
+ "is": 9.421440605951632,
+ "class_acc": 0.9430000185966492
+}
+=== 22:09:37 freq --w_low 1 --w_high 3 --r_c 0.125
+ "fid": 6.073442229082957,
+ "is": 10.05142088358198,
+ "class_acc": 0.9850999712944031
+}
+=== 22:25:52 freq --w_low 1 --w_high 6 --r_c 0.125
+ "fid": 17.93608346694822,
+ "is": 10.19568076576583,
+ "class_acc": 0.9557999968528748
+}
+=== 22:42:08 freq --w_low 3 --w_high 1 --r_c 0.125
+ "fid": 8.504387684224525,
+ "is": 9.599584095013933,
+ "class_acc": 0.9898999929428101
+}
+=== 22:58:24 freq --w_low 2 --w_high 4 --r_c 0.125
+ "fid": 9.555046217211782,
+ "is": 9.908593339971002,
+ "class_acc": 0.9868000149726868
+}
+=== 23:14:39 freq --w_low 1.5 --w_high 3 --r_c 0.125

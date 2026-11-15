@@ -1,0 +1,61 @@
+no push: 1000 images, 63 s, class shares 0.186 0.190 0.098 0.099 0.062 0.077 0.124 0.057 0.008 0.099
+How much each band alone tells about the final class (exact posteriors): accuracy of the top class and mean p of the final class, full / low only / high only
+  sigma   80.000: acc 0.28/0.27/0.11   p_final 0.11/0.11/0.10
+  sigma   57.586: acc 0.28/0.27/0.11   p_final 0.11/0.11/0.10
+  sigma   40.786: acc 0.29/0.28/0.11   p_final 0.11/0.11/0.10
+  sigma   28.375: acc 0.29/0.28/0.12   p_final 0.12/0.12/0.10
+  sigma   19.352: acc 0.31/0.29/0.13   p_final 0.13/0.13/0.10
+  sigma   12.910: acc 0.33/0.30/0.14   p_final 0.15/0.14/0.10
+  sigma    8.401: acc 0.36/0.33/0.15   p_final 0.17/0.17/0.11
+  sigma    5.315: acc 0.39/0.35/0.17   p_final 0.21/0.20/0.11
+  sigma    3.257: acc 0.45/0.37/0.21   p_final 0.27/0.24/0.13
+  sigma    1.923: acc 0.51/0.42/0.28   p_final 0.35/0.29/0.16
+  sigma    1.088: acc 0.60/0.47/0.37   p_final 0.47/0.35/0.25
+  sigma    0.585: acc 0.66/0.50/0.52   p_final 0.59/0.41/0.41
+  sigma    0.296: acc 0.70/0.56/0.61   p_final 0.67/0.48/0.56
+  sigma    0.140: acc 0.73/0.60/0.67   p_final 0.71/0.53/0.65
+  sigma    0.060: acc 0.75/0.62/0.73   p_final 0.75/0.56/0.72
+  sigma    0.023: acc 0.80/0.62/0.80   p_final 0.79/0.57/0.80
+  sigma    0.008: acc 0.94/0.63/0.93   p_final 0.94/0.57/0.92
+  sigma    0.002: acc 0.90/0.63/0.80   p_final 0.90/0.57/0.80
+low  away   steps  0- 1 sigma  80.000-57.586: flip 0.116 changed 0.116 other 0.116 | rms low 0.0293 high 0.0038  64 s
+low  away   steps  2- 3 sigma  40.786-28.375: flip 0.258 changed 0.258 other 0.258 | rms low 0.0546 high 0.0085  56 s
+low  away   steps  4- 5 sigma  19.352-12.910: flip 0.459 changed 0.459 other 0.459 | rms low 0.0797 high 0.0164  48 s
+low  away   steps  6- 7 sigma   8.401- 5.315: flip 0.635 changed 0.635 other 0.635 | rms low 0.0778 high 0.0231  44 s
+low  away   steps  8- 9 sigma   3.257- 1.923: flip 0.588 changed 0.588 other 0.588 | rms low 0.0425 high 0.0189  35 s
+low  away   steps 10-11 sigma   1.088- 0.585: flip 0.302 changed 0.302 other 0.302 | rms low 0.0102 high 0.0052  27 s
+low  away   steps 12-13 sigma   0.296- 0.140: flip 0.112 changed 0.112 other 0.112 | rms low 0.0015 high 0.0006  20 s
+low  away   steps 14-15 sigma   0.060- 0.023: flip 0.016 changed 0.016 other 0.016 | rms low 0.0001 high 0.0001  14 s
+low  away   steps 16-17 sigma   0.008- 0.002: flip 0.000 changed 0.000 other 0.000 | rms low 0.0000 high 0.0000  8 s
+low  away   steps  0-17 sigma  80.000- 0.002: flip 0.986 changed 0.986 other 0.986 | rms low 0.3396 high 0.0550  64 s
+low  toward steps  0- 1 sigma  80.000-57.586: flip 0.010 changed 0.068 other 0.058 | rms low 0.0277 high 0.0029  59 s
+low  toward steps  2- 3 sigma  40.786-28.375: flip 0.025 changed 0.134 other 0.109 | rms low 0.0532 high 0.0061  52 s
+low  toward steps  4- 5 sigma  19.352-12.910: flip 0.061 changed 0.261 other 0.200 | rms low 0.0795 high 0.0118  46 s
+low  toward steps  6- 7 sigma   8.401- 5.315: flip 0.133 changed 0.419 other 0.286 | rms low 0.0804 high 0.0180  41 s
+low  toward steps  8- 9 sigma   3.257- 1.923: flip 0.151 changed 0.453 other 0.302 | rms low 0.0527 high 0.0187  35 s
+low  toward steps 10-11 sigma   1.088- 0.585: flip 0.087 changed 0.282 other 0.195 | rms low 0.0234 high 0.0090  27 s
+low  toward steps 12-13 sigma   0.296- 0.140: flip 0.028 changed 0.157 other 0.129 | rms low 0.0075 high 0.0025  20 s
+low  toward steps 14-15 sigma   0.060- 0.023: flip 0.001 changed 0.013 other 0.012 | rms low 0.0009 high 0.0004  13 s
+low  toward steps 16-17 sigma   0.008- 0.002: flip 0.000 changed 0.000 other 0.000 | rms low 0.0000 high 0.0000  7 s
+low  toward steps  0-17 sigma  80.000- 0.002: flip 0.544 changed 0.859 other 0.315 | rms low 0.2176 high 0.0382  63 s
+high away   steps  0- 1 sigma  80.000-57.586: flip 0.012 changed 0.012 other 0.012 | rms low 0.0005 high 0.0005  61 s
+high away   steps  2- 3 sigma  40.786-28.375: flip 0.024 changed 0.024 other 0.024 | rms low 0.0011 high 0.0012  59 s
+high away   steps  4- 5 sigma  19.352-12.910: flip 0.088 changed 0.088 other 0.088 | rms low 0.0028 high 0.0034  48 s
+high away   steps  6- 7 sigma   8.401- 5.315: flip 0.256 changed 0.256 other 0.256 | rms low 0.0067 high 0.0105  42 s
+high away   steps  8- 9 sigma   3.257- 1.923: flip 0.555 changed 0.555 other 0.555 | rms low 0.0107 high 0.0244  33 s
+high away   steps 10-11 sigma   1.088- 0.585: flip 0.604 changed 0.604 other 0.604 | rms low 0.0047 high 0.0224  28 s
+high away   steps 12-13 sigma   0.296- 0.140: flip 0.399 changed 0.399 other 0.399 | rms low 0.0007 high 0.0064  20 s
+high away   steps 14-15 sigma   0.060- 0.023: flip 0.295 changed 0.295 other 0.295 | rms low 0.0001 high 0.0014  14 s
+high away   steps 16-17 sigma   0.008- 0.002: flip 0.168 changed 0.168 other 0.168 | rms low 0.0000 high 0.0001  7 s
+high away   steps  0-17 sigma  80.000- 0.002: flip 0.913 changed 0.913 other 0.913 | rms low 0.0255 high 0.0951  62 s
+high toward steps  0- 1 sigma  80.000-57.586: flip 0.000 changed 0.006 other 0.006 | rms low 0.0006 high 0.0007  62 s
+high toward steps  2- 3 sigma  40.786-28.375: flip 0.000 changed 0.014 other 0.014 | rms low 0.0014 high 0.0015  54 s
+high toward steps  4- 5 sigma  19.352-12.910: flip 0.003 changed 0.048 other 0.045 | rms low 0.0032 high 0.0040  46 s
+high toward steps  6- 7 sigma   8.401- 5.315: flip 0.029 changed 0.153 other 0.124 | rms low 0.0074 high 0.0116  40 s
+high toward steps  8- 9 sigma   3.257- 1.923: flip 0.172 changed 0.515 other 0.343 | rms low 0.0138 high 0.0310  34 s
+high toward steps 10-11 sigma   1.088- 0.585: flip 0.405 changed 0.781 other 0.376 | rms low 0.0100 high 0.0369  27 s
+high toward steps 12-13 sigma   0.296- 0.140: flip 0.328 changed 0.706 other 0.378 | rms low 0.0030 high 0.0200  20 s
+high toward steps 14-15 sigma   0.060- 0.023: flip 0.163 changed 0.632 other 0.469 | rms low 0.0004 high 0.0060  14 s
+high toward steps 16-17 sigma   0.008- 0.002: flip 0.100 changed 0.329 other 0.229 | rms low 0.0000 high 0.0008  7 s
+high toward steps  0-17 sigma  80.000- 0.002: flip 0.975 changed 0.997 other 0.022 | rms low 0.0269 high 0.0553  61 s
+done 25.8 min

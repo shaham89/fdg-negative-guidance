@@ -1,0 +1,185 @@
+
+===== trajectory w=1; keys=['sigma', 'E_delta', 'E_Du', 'E_x', 'P_delta', 'edges'] P_delta=(18, 32, 32)
+sigma   |Delta|^2   DC%   low-nonDC%  high%  (rc=.125 soft mask, same as FreqStatic) | DC share of low band
+  80.000    11.761   43.6    49.6      4.0   |  46.7
+  57.586    12.863   44.6    49.2      3.4   |  47.5
+  40.786    13.849   45.2    48.7      3.2   |  48.1
+  28.375    14.234   45.1    48.8      3.1   |  47.9
+  19.352    13.421   42.7    50.8      3.2   |  45.5
+  12.910    11.300   36.7    55.8      3.4   |  39.6
+   8.401     8.784   27.7    62.0      4.5   |  30.8
+   5.315     6.702   16.2    65.9      8.3   |  19.7
+   3.257     5.621    6.7    60.2     18.2   |   9.9
+   1.923     4.144    2.3    46.3     33.8   |   4.8
+   1.088     2.216    0.9    31.8     51.1   |   2.8
+   0.585     0.986    0.4    21.5     65.4   |   1.8
+   0.296     0.344    0.2    15.4     74.6   |   1.4
+   0.140     0.093    0.1    12.1     79.7   |   1.2
+   0.060     0.021    0.1     9.0     84.1   |   1.2
+   0.023     0.006    0.1     4.4     91.2   |   1.9
+   0.008     0.001    0.1     2.7     94.0   |   3.4
+   0.002     0.000    0.2     2.7     94.4   |   7.6
+crossover sigma where |Low(Delta)| = |High(Delta)|, by cutoff (linear interp in log sigma):
+  rc=0.0625: sigma*=4.203  (later steps stay high-dominated: True)
+  rc=0.125: sigma*=1.490  (later steps stay high-dominated: True)
+  rc=0.1875: sigma*=0.622  (later steps stay high-dominated: True)
+  rc=0.25: sigma*=0.225  (later steps stay high-dominated: True)
+
+===== trajectory w=3; keys=['sigma', 'E_delta', 'E_Du', 'E_x', 'P_delta', 'edges'] P_delta=(18, 32, 32)
+sigma   |Delta|^2   DC%   low-nonDC%  high%  (rc=.125 soft mask, same as FreqStatic) | DC share of low band
+  80.000    11.761   43.6    49.6      4.0   |  46.7
+  57.586    12.796   44.6    49.2      3.4   |  47.5
+  40.786    13.501   45.2    48.8      3.1   |  48.0
+  28.375    13.232   45.0    49.0      3.1   |  47.8
+  19.352    11.428   42.1    51.4      3.1   |  45.0
+  12.910     8.370   34.5    57.5      3.6   |  37.4
+   8.401     5.467   22.8    64.8      5.5   |  26.0
+   5.315     3.291   11.0    65.5     11.9   |  14.3
+   3.257     2.443    3.8    53.0     27.0   |   6.6
+   1.923     2.153    1.5    38.7     43.0   |   3.8
+   1.088     1.586    0.8    27.7     56.8   |   2.8
+   0.585     0.848    0.5    19.6     68.2   |   2.5
+   0.296     0.333    0.3    14.6     76.0   |   2.2
+   0.140     0.099    0.3    11.7     80.5   |   2.1
+   0.060     0.025    0.3     8.9     84.4   |   2.7
+   0.023     0.006    0.2     5.4     89.9   |   4.0
+   0.008     0.001    0.2     3.5     93.1   |   6.1
+   0.002     0.000    0.4     3.4     93.5   |  10.4
+crossover sigma where |Low(Delta)| = |High(Delta)|, by cutoff (linear interp in log sigma):
+  rc=0.0625: sigma*=5.145  (later steps stay high-dominated: True)
+  rc=0.125: sigma*=2.010  (later steps stay high-dominated: True)
+  rc=0.1875: sigma*=0.757  (later steps stay high-dominated: True)
+  rc=0.25: sigma*=0.296  (later steps stay high-dominated: True)
+
+===== CFG frontier (w, FID, IS, acc)
+   (1.0, 3.840338066516324, 9.487850696393092, 0.9514)
+   (1.5, 4.872993944899235, 9.790631287925915, 0.9849)
+   (2.0, 6.678990128979422, 9.87825977530034, 0.989)
+   (3.0, 9.983772695757807, 9.698577968736666, 0.9909)
+   (4.0, 12.799054583758448, 9.63731544146346, 0.9890999794006348)
+   (6.0, 26.74567390355952, 9.421440605951632, 0.9430000185966492)
+
+===== IS gain over CFG at the same FID (interp on the CFG polyline), and class acc
+  ft_resolved_wmin1_wmax3_mu0_s1             FID   4.61  IS  9.759  dIS +0.045  acc 0.9832  clip 0.0130
+  time[freq_wl1_wh3_rc0.125]                 FID   5.44  IS  9.868  dIS +0.050  acc 0.9845  clip 0.0133
+  ft_bump_wmin1_wmax3_mu0_s1.5               FID   6.03  IS  9.891  dIS +0.044  acc 0.9890  clip 0.0129
+  freq_wl1_wh3_rc0.125                       FID   6.07  IS 10.051  dIS +0.203  acc 0.9851  clip 0.0150
+  interval_w3_0.3-5                          FID   6.15  IS 10.042  dIS +0.189  acc 0.9901  clip 0.0151
+  time[freq_wl1.5_wh3_rc0.125]               FID   6.35  IS  9.842  dIS -0.020  acc 0.9886  clip 0.0156
+  freq_wl1.5_wh3_rc0.125                     FID   6.84  IS  9.912  dIS +0.042  acc 0.9870  clip 0.0165
+  ft_unresolved_wmin1_wmax3_mu-2_s1          FID   7.26  IS  9.877  dIS +0.030  acc 0.9890  clip 0.0153
+  freq_wl3_wh1_rc0.125                       FID   8.50  IS  9.600  dIS -0.179  acc 0.9899  clip 0.0200
+  time[freq_wl2_wh4_rc0.125]                 FID   8.92  IS  9.736  dIS -0.020  acc 0.9871  clip 0.0247
+  time[freq_wl3_wh1_rc0.125]                 FID   9.37  IS  9.732  dIS -0.000  acc 0.9906  clip 0.0179
+  ft_unresolved_wmin1_wmax3_mu0_s1           FID   9.39  IS  9.886  dIS +0.155  acc 0.9914  clip 0.0194
+  freq_wl2_wh4_rc0.125                       FID   9.56  IS  9.909  dIS +0.187  acc 0.9868  clip 0.0267
+  ft_unresolved_wmin1_wmax3_mu2_s1           FID  10.09  IS  9.812  dIS +0.116  acc 0.9913  clip 0.0228
+  time[freq_wl1_wh6_rc0.125]                 FID  11.64  IS  9.814  dIS +0.151  acc 0.9725  clip 0.0332
+  ft_unresolved_wmin1_wmax6_mu0_s1           FID  16.07  IS  9.498  dIS -0.089  acc 0.9874  clip 0.0821
+  freq_wl1_wh6_rc0.125                       FID  17.94  IS 10.196  dIS +0.638  acc 0.9558  clip 0.0503
+
+===== noise from 5k half splits (n=4 configs)
+  |dIS| [0.178 0.231 0.168 0.028] mean 0.151
+  |dFID| [0.204 0.054 0.033 0.465] mean 0.189
+  std of a 5k estimate: IS 0.134, FID 0.168
+  std of a 10k estimate if std ~ 1/sqrt(N): IS 0.095, FID 0.119
+  std of a difference of two independent 10k arms: IS 0.134, FID 0.168
+  noise.py formula (mean/2): IS 0.076
+
+===== |High(Delta)| rms per pixel vs sigma (trajectory w=3); compare with sigma
+  sigma   80.000  rms High(Delta) 0.0215   rms Low(Delta) 0.1033   DC rms 0.0708
+  sigma   57.586  rms High(Delta) 0.0205   rms Low(Delta) 0.1082   DC rms 0.0747
+  sigma   40.786  rms High(Delta) 0.0204   rms Low(Delta) 0.1112   DC rms 0.0772
+  sigma   28.375  rms High(Delta) 0.0199   rms Low(Delta) 0.1101   DC rms 0.0762
+  sigma   19.352  rms High(Delta) 0.0186   rms Low(Delta) 0.1021   DC rms 0.0686
+  sigma   12.910  rms High(Delta) 0.0170   rms Low(Delta) 0.0866   DC rms 0.0531
+  sigma    8.401  rms High(Delta) 0.0171   rms Low(Delta) 0.0684   DC rms 0.0349
+  sigma    5.315  rms High(Delta) 0.0196   rms Low(Delta) 0.0495   DC rms 0.0188
+  sigma    3.257  rms High(Delta) 0.0254   rms Low(Delta) 0.0368   DC rms 0.0095
+  sigma    1.923  rms High(Delta) 0.0301   rms Low(Delta) 0.0291   DC rms 0.0057
+  sigma    1.088  rms High(Delta) 0.0297   rms Low(Delta) 0.0210   DC rms 0.0035
+  sigma    0.585  rms High(Delta) 0.0238   rms Low(Delta) 0.0129   DC rms 0.0021
+  sigma    0.296  rms High(Delta) 0.0157   rms Low(Delta) 0.0070   DC rms 0.0010
+  sigma    0.140  rms High(Delta) 0.0088   rms Low(Delta) 0.0034   DC rms 0.0005
+  sigma    0.060  rms High(Delta) 0.0045   rms Low(Delta) 0.0015   DC rms 0.0002
+  sigma    0.023  rms High(Delta) 0.0023   rms Low(Delta) 0.0006   DC rms 0.0001
+  sigma    0.008  rms High(Delta) 0.0010   rms Low(Delta) 0.0002   DC rms 0.0000
+  sigma    0.002  rms High(Delta) 0.0002   rms Low(Delta) 0.0000   DC rms 0.0000
+
+===== spectrum keys ['r', 'P', 'P_raw', 'P2d']
+  data DC power share 0.30771884322166443
+train (50000, 3, 32, 32)
+
+== diag_w1.npz: measured delta vs ideal class-mean delta, sigma=80
+  all            measured  11.7605  class-mean  17.3969  ratio measured/class-mean   0.676
+  DC             measured   5.1258  class-mean   8.9904  ratio measured/class-mean   0.570
+  low (no DC)    measured   5.8305  class-mean   7.5234  ratio measured/class-mean   0.775
+  high           measured   0.4730  class-mean   0.4485  ratio measured/class-mean   1.055
+  r 0.000-0.062  measured   9.9928  class-mean  15.1797  ratio measured/class-mean   0.658
+  r 0.062-0.125  measured   1.1860  class-mean   1.6214  ratio measured/class-mean   0.731
+  r 0.125-0.188  measured   0.2028  class-mean   0.2623  ratio measured/class-mean   0.773
+  r 0.188-0.250  measured   0.1057  class-mean   0.1165  ratio measured/class-mean   0.907
+  r 0.250-0.375  measured   0.1392  class-mean   0.1255  ratio measured/class-mean   1.109
+  r 0.375-1.000  measured   0.1341  class-mean   0.0915  ratio measured/class-mean   1.466
+
+== diag_w3.npz: measured delta vs ideal class-mean delta, sigma=80
+  all            measured  11.7605  class-mean  17.3969  ratio measured/class-mean   0.676
+  DC             measured   5.1258  class-mean   8.9904  ratio measured/class-mean   0.570
+  low (no DC)    measured   5.8305  class-mean   7.5234  ratio measured/class-mean   0.775
+  high           measured   0.4730  class-mean   0.4485  ratio measured/class-mean   1.055
+  r 0.000-0.062  measured   9.9928  class-mean  15.1797  ratio measured/class-mean   0.658
+  r 0.062-0.125  measured   1.1860  class-mean   1.6214  ratio measured/class-mean   0.731
+  r 0.125-0.188  measured   0.2028  class-mean   0.2623  ratio measured/class-mean   0.773
+  r 0.188-0.250  measured   0.1057  class-mean   0.1165  ratio measured/class-mean   0.907
+  r 0.250-0.375  measured   0.1392  class-mean   0.1255  ratio measured/class-mean   1.109
+  r 0.375-1.000  measured   0.1341  class-mean   0.0915  ratio measured/class-mean   1.466
+
+== per-image mean colour (pixels in [-1,1])
+  global std per channel [0.257 0.252 0.307]
+  mean within-class std per channel [0.253 0.241 0.269]
+  rms class shift per channel       [0.033 0.069 0.143]
+  rms class shift over all channels 0.0937  (compare DC rms of measured delta at sigma=80: 0.0708)
+  airplane    shift RGB [0.069 0.156 0.285]   in within-class stds [0.22 0.55 0.87]
+  automobile  shift RGB [-0.04  -0.055  0.001]   in within-class stds [-0.17 -0.22  0.  ]
+  bird        shift RGB [-0.004  0.019 -0.045]   in within-class stds [-0.02  0.07 -0.14]
+  cat         shift RGB [ 0.008 -0.051 -0.062]   in within-class stds [ 0.03 -0.2  -0.22]
+  deer        shift RGB [-0.04  -0.034 -0.137]   in within-class stds [-0.16 -0.15 -0.52]
+  dog         shift RGB [ 0.017 -0.035 -0.06 ]   in within-class stds [ 0.07 -0.15 -0.24]
+  frog        shift RGB [-0.043 -0.088 -0.203]   in within-class stds [-0.16 -0.35 -0.75]
+  horse       shift RGB [ 0.021 -0.005 -0.059]   in within-class stds [ 0.1  -0.02 -0.26]
+  ship        shift RGB [-0.002  0.086  0.216]   in within-class stds [-0.01  0.38  0.89]
+  truck       shift RGB [0.015 0.006 0.063]   in within-class stds [0.07 0.03 0.28]
+  if w=3 moved the mean colour by (w-1)*shift, typical move in within-class stds: 0.684
+
+== between-class / within-class power per band (class-mean info only)
+  r 0.000-0.000: between    8.9904  within      66.83  ratio 0.13452
+  r 0.000-0.062: between    6.1893  within      75.20  ratio 0.08231
+  r 0.062-0.125: between    1.6214  within      50.52  ratio 0.03209
+  r 0.125-0.188: between    0.2623  within      19.75  ratio 0.01328
+  r 0.188-0.250: between    0.1165  within       9.95  ratio 0.01171
+  r 0.250-0.375: between    0.1255  within       9.44  ratio 0.01329
+  r 0.375-1.000: between    0.0915  within       4.01  ratio 0.02284
+per-image colour spread of the base arm (std over images, per channel): [0.244 0.263 0.314]
+arm                               k  +-2se     R2  mean |dcolour|  img std ratio      sharpness ratio
+cfg_w1.5                       0.36   0.08   0.57          0.0313          1.017                1.051
+cfg_w2                         0.63   0.13   0.57          0.0565          1.040                1.085
+cfg_w3                         1.02   0.18   0.55          0.0957          1.087                1.198
+cfg_w4                         1.28   0.21   0.52          0.1262          1.127                1.331
+cfg_w6                         1.72   0.36   0.41          0.1847          1.252                1.614
+freq_wl1_wh3_rc0.125           0.02   0.02   0.07          0.0048          1.000                1.194
+freq_wl1_wh6_rc0.125          -0.13   0.38   0.01          0.0327          1.137                1.650
+freq_wl3_wh1_rc0.125           1.02   0.18   0.56          0.0955          1.089                1.042
+freq_wl2_wh4_rc0.125           0.63   0.13   0.54          0.0579          1.036                1.294
+freq_wl1.5_wh3_rc0.125         0.36   0.09   0.55          0.0326          1.015                1.178
+
+per class, cfg_w3 minus w1 (RGB mean colour shift) vs (w-1)*class shift = 2*shift:
+  airplane    n=7  2*shift [0.14 0.31 0.57]  cfg3 [0.09 0.2  0.27]  (1,3) [-0.    0.    0.01]  (3,1) [0.09 0.21 0.27]
+  automobile  n=7  2*shift [-0.08 -0.11  0.  ]  cfg3 [-0.05 -0.04  0.01]  (1,3) [-0.  0.  0.]  (3,1) [-0.06 -0.03  0.01]
+  bird        n=7  2*shift [-0.01  0.04 -0.09]  cfg3 [-0.04 -0.01 -0.11]  (1,3) [-0.  0. -0.]  (3,1) [-0.04 -0.01 -0.1 ]
+  cat         n=7  2*shift [ 0.02 -0.1  -0.12]  cfg3 [ 0.02 -0.08 -0.05]  (1,3) [ 0. -0.  0.]  (3,1) [ 0.02 -0.08 -0.04]
+  deer        n=6  2*shift [-0.08 -0.07 -0.27]  cfg3 [-0.07 -0.05 -0.15]  (1,3) [-0. -0. -0.]  (3,1) [-0.07 -0.05 -0.15]
+  dog         n=6  2*shift [ 0.03 -0.07 -0.12]  cfg3 [-0.01 -0.02 -0.01]  (1,3) [ 0. -0.  0.]  (3,1) [-0.   -0.02 -0.02]
+  frog        n=6  2*shift [-0.09 -0.18 -0.41]  cfg3 [-0.02 -0.06 -0.13]  (1,3) [ 0. -0. -0.]  (3,1) [-0.02 -0.06 -0.13]
+  horse       n=6  2*shift [ 0.04 -0.01 -0.12]  cfg3 [ 0.02  0.02 -0.07]  (1,3) [ 0.    0.01 -0.  ]  (3,1) [ 0.02  0.02 -0.07]
+  ship        n=6  2*shift [-0.    0.17  0.43]  cfg3 [0.03 0.12 0.25]  (1,3) [ 0.   -0.    0.01]  (3,1) [0.02 0.12 0.26]
+  truck       n=6  2*shift [0.03 0.01 0.13]  cfg3 [0.06 0.06 0.11]  (1,3) [0.01 0.   0.  ]  (3,1) [0.06 0.06 0.11]

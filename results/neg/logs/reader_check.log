@@ -1,0 +1,14 @@
+Mon Nov  2 16:18:56 IST 2026
+ResNet-56 on Low(x):  acc 0.143  reads cat: real cats 0.140, others 0.107
+ResNet-56 on x:       acc 0.938  reads cat: real cats 0.880, others 0.011
+reader sigma=0.6   acc 0.589  reads cat: real cats 0.500, others 0.066
+reader sigma=1.2   acc 0.575  reads cat: real cats 0.450, others 0.080
+reader sigma=2     acc 0.553  reads cat: real cats 0.450, others 0.067
+reader sigma=3.25  acc 0.483  reads cat: real cats 0.450, others 0.080
+reader sigma=5     acc 0.433  reads cat: real cats 0.460, others 0.059
+reader sigma=8     acc 0.380  reads cat: real cats 0.290, others 0.042
+chosen {'sigma': 0.6, 'acc': 0.5889999866485596, 'cat': 0.5, 'other': 0.06555555760860443}
+Mon Nov  2 16:22:16 IST 2026
+neg3_a0_b2_rc0.125_smoke                 FID=103.56 IS=5.86 k: resnet 0.0150 vgg 0.0150 low 0.050  mix=0.14 0.14 0.10 0.01 0.05 0.06 0.11 0.16 0.14 0.10  2.6 min
+Mon Nov  2 16:24:52 IST 2026
+CHECK_DONE

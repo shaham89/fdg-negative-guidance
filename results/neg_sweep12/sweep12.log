@@ -1,0 +1,109 @@
+=== 07:49:26 post_diag
+2000 images, 6.9 min.  Final class shares (ResNet-56): 0.102 0.112 0.082 0.098 0.086 0.081 0.097 0.121 0.110 0.111
+share of class 3 at the end: 0.098.  Per step: accuracy of the top class | mean p of the final class | mean p_k (should be 0.098) | p_k for final k / others | AUC for k | unexplained share of D_u
+  sigma | acc full/low/high |        p_final |       mean p_k | p_k in/out full         low        high |          AUC k |          resid | tv
+ 80.000 |    0.10/0.09/0.11 | 0.11/0.11/0.12 | 0.030/0.019/0.005 |      0.03/0.029  0.03/0.018  0.01/0.004 | 0.50/0.53/0.49 | 0.61/0.37/0.75 | 0.70
+ 57.586 |    0.13/0.13/0.12 | 0.12/0.12/0.12 | 0.042/0.036/0.053 |      0.06/0.040  0.06/0.034  0.06/0.052 | 0.58/0.60/0.51 | 0.48/0.32/0.79 | 0.50
+ 40.786 |    0.20/0.19/0.13 | 0.13/0.13/0.12 | 0.085/0.084/0.085 |      0.12/0.082  0.12/0.080  0.10/0.084 | 0.62/0.64/0.52 | 0.34/0.23/0.71 | 0.44
+ 28.375 |    0.23/0.22/0.14 | 0.15/0.15/0.13 | 0.134/0.135/0.091 |      0.17/0.129  0.18/0.130  0.10/0.090 | 0.63/0.64/0.51 | 0.24/0.17/0.59 | 0.43
+ 19.352 |    0.26/0.26/0.16 | 0.16/0.16/0.14 | 0.155/0.157/0.089 |      0.20/0.151  0.20/0.152  0.10/0.088 | 0.64/0.64/0.54 | 0.19/0.13/0.53 | 0.40
+ 12.910 |    0.32/0.31/0.23 | 0.18/0.18/0.16 | 0.143/0.144/0.098 |      0.18/0.138  0.19/0.140  0.12/0.096 | 0.64/0.64/0.55 | 0.18/0.13/0.51 | 0.35
+  8.401 |    0.40/0.39/0.33 | 0.21/0.21/0.20 | 0.118/0.119/0.097 |      0.18/0.112  0.18/0.112  0.13/0.093 | 0.68/0.68/0.58 | 0.20/0.15/0.50 | 0.31
+  5.315 |    0.52/0.52/0.46 | 0.30/0.30/0.28 | 0.109/0.110/0.096 |      0.23/0.096  0.23/0.097  0.20/0.085 | 0.76/0.76/0.71 | 0.20/0.16/0.42 | 0.27
+  3.257 |    0.66/0.66/0.62 | 0.43/0.43/0.41 | 0.100/0.099/0.099 |      0.30/0.079  0.30/0.077  0.27/0.079 | 0.85/0.84/0.81 | 0.25/0.21/0.37 | 0.23
+  1.923 |    0.77/0.77/0.75 | 0.55/0.55/0.54 | 0.097/0.095/0.098 |      0.39/0.065  0.39/0.064  0.38/0.068 | 0.91/0.90/0.89 | 0.33/0.29/0.38 | 0.22
+  1.088 |    0.85/0.84/0.83 | 0.64/0.64/0.63 | 0.092/0.092/0.091 |      0.47/0.051  0.47/0.051  0.45/0.052 | 0.95/0.94/0.93 | 0.39/0.36/0.41 | 0.20
+  0.585 |    0.89/0.88/0.87 | 0.68/0.66/0.67 | 0.091/0.090/0.089 |      0.52/0.045  0.50/0.046  0.51/0.044 | 0.96/0.96/0.95 | 0.44/0.42/0.43 | 0.21
+  0.296 |    0.90/0.88/0.90 | 0.68/0.65/0.68 | 0.090/0.091/0.089 |      0.54/0.042  0.50/0.046  0.54/0.041 | 0.96/0.95/0.95 | 0.50/0.51/0.49 | 0.23
+  0.140 |    0.90/0.87/0.90 | 0.66/0.61/0.67 | 0.090/0.091/0.089 |      0.53/0.041  0.48/0.048  0.54/0.041 | 0.96/0.92/0.95 | 0.60/0.62/0.59 | 0.26
+  0.060 |    0.89/0.82/0.89 | 0.62/0.56/0.62 | 0.088/0.091/0.088 |      0.51/0.042  0.45/0.052  0.52/0.041 | 0.95/0.91/0.94 | 0.74/0.75/0.73 | 0.32
+  0.023 |    0.73/0.61/0.72 | 0.49/0.43/0.49 | 0.083/0.090/0.084 |      0.40/0.048  0.37/0.059  0.40/0.049 | 0.90/0.80/0.89 | 0.89/0.89/0.89 | 0.47
+  0.008 |    0.40/0.27/0.40 | 0.32/0.25/0.32 | 0.082/0.067/0.082 |      0.27/0.062  0.17/0.055  0.28/0.062 | 0.72/0.63/0.71 | 0.96/0.96/0.96 | 0.68
+  0.002 |    0.20/0.14/0.21 | 0.20/0.15/0.19 | 0.042/0.142/0.041 |      0.10/0.036  0.16/0.140  0.10/0.035 | 0.59/0.53/0.58 | 0.98/0.97/0.98 | 0.80
+=== 07:56:26 pmap
+no push: 4000 images in 1.4 min; class shares 0.106 0.111 0.080 0.090 0.086 0.082 0.106 0.120 0.110 0.108
+low  away   steps  0- 1 sigma  80.000-57.586: flip 0.178 changed 0.178 other 0.178 | rms low 0.0417 high 0.0313 | low reader k 0.543 -> 0.477  85 s
+low  away   steps  2- 3 sigma  40.786-28.375: flip 0.369 changed 0.369 other 0.369 | rms low 0.0871 high 0.0600 | low reader k 0.543 -> 0.389  77 s
+low  away   steps  4- 5 sigma  19.352-12.910: flip 0.627 changed 0.627 other 0.627 | rms low 0.1442 high 0.0947 | low reader k 0.543 -> 0.256  69 s
+low  away   steps  6- 7 sigma   8.401- 5.315: flip 0.767 changed 0.767 other 0.767 | rms low 0.1551 high 0.1109 | low reader k 0.543 -> 0.173  62 s
+low  away   steps  8- 9 sigma   3.257- 1.923: flip 0.522 changed 0.522 other 0.522 | rms low 0.0813 high 0.0721 | low reader k 0.543 -> 0.316  54 s
+low  away   steps 10-11 sigma   1.088- 0.585: flip 0.139 changed 0.139 other 0.139 | rms low 0.0239 high 0.0184 | low reader k 0.543 -> 0.502  46 s
+low  away   steps 12-13 sigma   0.296- 0.140: flip 0.029 changed 0.029 other 0.029 | rms low 0.0068 high 0.0035 | low reader k 0.543 -> 0.539  39 s
+low  away   steps 14-15 sigma   0.060- 0.023: flip 0.004 changed 0.004 other 0.004 | rms low 0.0015 high 0.0007 | low reader k 0.543 -> 0.542  31 s
+low  away   steps 16-17 sigma   0.008- 0.002: flip 0.002 changed 0.002 other 0.002 | rms low 0.0002 high 0.0001 | low reader k 0.543 -> 0.545  22 s
+low  away   steps  0-17 sigma  80.000- 0.002: flip 0.984 changed 0.984 other 0.984 | rms low 0.3898 high 0.1766 | low reader k 0.543 -> 0.018  144 s
+low  toward steps  0- 1 sigma  80.000-57.586: flip 0.028 changed 0.122 other 0.093 | rms low 0.0370 high 0.0258 | low reader k 0.061 -> 0.079  85 s
+low  toward steps  2- 3 sigma  40.786-28.375: flip 0.061 changed 0.236 other 0.175 | rms low 0.0773 high 0.0489 | low reader k 0.061 -> 0.094  77 s
+low  toward steps  4- 5 sigma  19.352-12.910: flip 0.144 changed 0.412 other 0.269 | rms low 0.1271 high 0.0786 | low reader k 0.061 -> 0.138  69 s
+low  toward steps  6- 7 sigma   8.401- 5.315: flip 0.366 changed 0.654 other 0.288 | rms low 0.1560 high 0.1091 | low reader k 0.061 -> 0.278  62 s
+low  toward steps  8- 9 sigma   3.257- 1.923: flip 0.477 changed 0.726 other 0.249 | rms low 0.1195 high 0.1008 | low reader k 0.061 -> 0.396  54 s
+low  toward steps 10-11 sigma   1.088- 0.585: flip 0.105 changed 0.234 other 0.130 | rms low 0.0485 high 0.0366 | low reader k 0.061 -> 0.220  46 s
+low  toward steps 12-13 sigma   0.296- 0.140: flip 0.006 changed 0.027 other 0.021 | rms low 0.0108 high 0.0058 | low reader k 0.061 -> 0.076  39 s
+low  toward steps 14-15 sigma   0.060- 0.023: flip 0.001 changed 0.004 other 0.003 | rms low 0.0017 high 0.0008 | low reader k 0.061 -> 0.062  31 s
+low  toward steps 16-17 sigma   0.008- 0.002: flip 0.000 changed 0.000 other 0.000 | rms low 0.0002 high 0.0001 | low reader k 0.061 -> 0.061  22 s
+low  toward steps  0-17 sigma  80.000- 0.002: flip 0.930 changed 0.984 other 0.055 | rms low 0.3071 high 0.1512 | low reader k 0.061 -> 0.673  144 s
+high away   steps  0- 1 sigma  80.000-57.586: flip 0.011 changed 0.011 other 0.011 | rms low 0.0022 high 0.0025 | low reader k 0.543 -> 0.546  85 s
+high away   steps  2- 3 sigma  40.786-28.375: flip 0.034 changed 0.034 other 0.034 | rms low 0.0054 high 0.0062 | low reader k 0.543 -> 0.539  77 s
+high away   steps  4- 5 sigma  19.352-12.910: flip 0.090 changed 0.090 other 0.090 | rms low 0.0138 high 0.0166 | low reader k 0.543 -> 0.516  69 s
+high away   steps  6- 7 sigma   8.401- 5.315: flip 0.274 changed 0.274 other 0.274 | rms low 0.0331 high 0.0436 | low reader k 0.543 -> 0.434  62 s
+high away   steps  8- 9 sigma   3.257- 1.923: flip 0.351 changed 0.351 other 0.351 | rms low 0.0339 high 0.0630 | low reader k 0.543 -> 0.439  54 s
+high away   steps 10-11 sigma   1.088- 0.585: flip 0.179 changed 0.179 other 0.179 | rms low 0.0134 high 0.0464 | low reader k 0.543 -> 0.525  46 s
+high away   steps 12-13 sigma   0.296- 0.140: flip 0.097 changed 0.097 other 0.097 | rms low 0.0033 high 0.0205 | low reader k 0.543 -> 0.543  39 s
+high away   steps 14-15 sigma   0.060- 0.023: flip 0.032 changed 0.032 other 0.032 | rms low 0.0007 high 0.0064 | low reader k 0.543 -> 0.546  31 s
+high away   steps 16-17 sigma   0.008- 0.002: flip 0.004 changed 0.004 other 0.004 | rms low 0.0001 high 0.0014 | low reader k 0.543 -> 0.545  22 s
+high away   steps  0-17 sigma  80.000- 0.002: flip 0.609 changed 0.609 other 0.609 | rms low 0.0765 high 0.1382 | low reader k 0.543 -> 0.288  144 s
+high toward steps  0- 1 sigma  80.000-57.586: flip 0.002 changed 0.009 other 0.007 | rms low 0.0022 high 0.0025 | low reader k 0.061 -> 0.063  85 s
+high toward steps  2- 3 sigma  40.786-28.375: flip 0.004 changed 0.024 other 0.020 | rms low 0.0051 high 0.0057 | low reader k 0.061 -> 0.065  77 s
+high toward steps  4- 5 sigma  19.352-12.910: flip 0.012 changed 0.058 other 0.046 | rms low 0.0110 high 0.0129 | low reader k 0.061 -> 0.069  69 s
+high toward steps  6- 7 sigma   8.401- 5.315: flip 0.052 changed 0.164 other 0.112 | rms low 0.0290 high 0.0386 | low reader k 0.061 -> 0.087  62 s
+high toward steps  8- 9 sigma   3.257- 1.923: flip 0.252 changed 0.475 other 0.223 | rms low 0.0525 high 0.0934 | low reader k 0.061 -> 0.200  54 s
+high toward steps 10-11 sigma   1.088- 0.585: flip 0.431 changed 0.671 other 0.240 | rms low 0.0287 high 0.0895 | low reader k 0.061 -> 0.135  46 s
+high toward steps 12-13 sigma   0.296- 0.140: flip 0.119 changed 0.287 other 0.168 | rms low 0.0059 high 0.0360 | low reader k 0.061 -> 0.064  39 s
+high toward steps 14-15 sigma   0.060- 0.023: flip 0.004 changed 0.026 other 0.022 | rms low 0.0009 high 0.0082 | low reader k 0.061 -> 0.060  31 s
+high toward steps 16-17 sigma   0.008- 0.002: flip 0.001 changed 0.003 other 0.002 | rms low 0.0001 high 0.0015 | low reader k 0.061 -> 0.061  22 s
+high toward steps  0-17 sigma  80.000- 0.002: flip 0.905 changed 0.975 other 0.070 | rms low 0.0853 high 0.1468 | low reader k 0.061 -> 0.360  144 s
+PMAP DONE 43.3 min
+=== 08:39:49 neg.py base --k 3
+Downloading: "https://github.com/toshas/torch-fidelity/releases/download/v0.2.0/weights-inception-2015-12-05-6726825d.pth" to /root/.cache/torch/hub/checkpoints/weights-inception-2015-12-05-6726825d.pth
+neg3_none                                FID=7.72 IS=9.08 k: resnet 0.0900 vgg 0.0928 low 0.097  mix=0.11 0.11 0.08 0.09 0.08 0.08 0.10 0.12 0.11 0.11  3.9 min
+neg3_oracle                              FID=6.41 IS=9.17 k: resnet 0.0152 vgg 0.0182 low 0.058  mix=0.11 0.11 0.11 0.02 0.11 0.10 0.11 0.11 0.11 0.11  3.3 min
+=== 08:47:06 neg.py exact --k 3 --a 1 --b 1 --pfit band
+neg3_x_ratio_a1_b1_rc0.125_pband         FID=7.04 IS=8.99 k: resnet 0.0420 vgg 0.0406 low 0.075  mix=0.11 0.12 0.09 0.04 0.09 0.08 0.11 0.13 0.12 0.12  17.1 min
+=== 09:04:15 neg.py exact --k 3 --a 1 --b 1 --pfit low
+neg3_x_ratio_a1_b1_rc0.125_plow          FID=7.01 IS=8.96 k: resnet 0.0400 vgg 0.0406 low 0.077  mix=0.11 0.12 0.09 0.04 0.08 0.08 0.11 0.13 0.12 0.12  17.1 min
+=== 09:21:23 neg.py exact --k 3 --a 1 --b 1 --pfit high
+neg3_x_ratio_a1_b1_rc0.125_phigh         FID=6.98 IS=9.03 k: resnet 0.0436 vgg 0.0406 low 0.072  mix=0.11 0.12 0.09 0.04 0.09 0.08 0.10 0.13 0.12 0.11  17.1 min
+=== 09:38:33 neg.py posneg --c 5 --k 3 --w_low 2 --w_high 2 --low_lo 2.5 --dc 1
+pn5not3_posneg_wl2_wh2_rc0.125_dc1_lowsig2.5 FID=21.81 IS=5.45 k: resnet 0.0046 vgg 0.0050 low 0.086  mix=0.00 0.00 0.00 0.00 0.00 0.98 0.00 0.01 0.00 0.00  3.5 min
+=== 09:42:10 neg.py posneg --c 5 --k 3 --w_low 2 --w_high 2 --low_lo 4 --dc 1
+pn5not3_posneg_wl2_wh2_rc0.125_dc1_lowsig4 FID=19.62 IS=5.58 k: resnet 0.0066 vgg 0.0088 low 0.092  mix=0.00 0.00 0.00 0.01 0.00 0.98 0.00 0.01 0.00 0.00  3.5 min
+=== 09:45:43 neg.py posneg --c 5 --k 3 --w_low 3 --w_high 2 --low_lo 4 --dc 1
+pn5not3_posneg_wl3_wh2_rc0.125_dc1_lowsig4 FID=26.98 IS=5.14 k: resnet 0.0042 vgg 0.0042 low 0.084  mix=0.00 0.00 0.00 0.00 0.00 0.99 0.00 0.01 0.00 0.00  3.5 min
+=== 09:49:17 neg.py posneg --c 3 --k 5 --w_low 2 --w_high 2 --low_lo 2.5 --dc 1
+pn3not5_posneg_wl2_wh2_rc0.125_dc1_lowsig2.5 FID=26.57 IS=4.75 k: resnet 0.0036 vgg 0.0030 low 0.086  mix=0.01 0.00 0.01 0.97 0.00 0.00 0.00 0.00 0.00 0.00  3.5 min
+=== 09:52:53 neg.py posneg --c 9 --k 1 --w_low 2 --w_high 2 --low_lo 2.5 --dc 1
+pn9not1_posneg_wl2_wh2_rc0.125_dc1_lowsig2.5 FID=14.79 IS=2.06 k: resnet 0.0004 vgg 0.0002 low 0.030  mix=0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 1.00  3.6 min
+=== 09:56:32 neg.py posneg --c 9 --k 1 --w_low 2 --w_high 1
+pn9not1_posneg_wl2_wh1_rc0.125           FID=10.50 IS=2.15 k: resnet 0.0006 vgg 0.0002 low 0.017  mix=0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.99  3.5 min
+=== 10:00:05 neg.py posneg --c 9 --k 1 --w_low 2 --w_high 2
+pn9not1_posneg_wl2_wh2_rc0.125           FID=18.19 IS=1.99 k: resnet 0.0000 vgg 0.0000 low 0.014  mix=0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 1.00  3.5 min
+=== 10:03:39 neg.py base --k 3 --seed 1
+neg3_none_seed1                          FID=7.77 IS=9.35 k: resnet 0.0920 vgg 0.0920 low 0.086  mix=0.11 0.11 0.09 0.09 0.09 0.10 0.10 0.11 0.11 0.10  3.5 min
+neg3_oracle_seed1                        FID=6.36 IS=9.38 k: resnet 0.0152 vgg 0.0184 low 0.060  mix=0.11 0.11 0.11 0.02 0.11 0.10 0.11 0.11 0.11 0.11  3.3 min
+=== 10:10:31 neg.py exact --k 3 --a 1 --b 1 --seed 1
+neg3_x_ratio_a1_b1_rc0.125_seed1         FID=6.81 IS=9.15 k: resnet 0.0420 vgg 0.0398 low 0.059  mix=0.11 0.12 0.09 0.04 0.09 0.09 0.10 0.13 0.12 0.10  16.5 min
+=== 10:27:05 neg.py base --k 3 --seed 2
+neg3_none_seed2                          FID=7.66 IS=9.43 k: resnet 0.0936 vgg 0.0986 low 0.094  mix=0.11 0.11 0.09 0.09 0.09 0.10 0.10 0.11 0.09 0.10  3.5 min
+neg3_oracle_seed2                        FID=6.45 IS=9.15 k: resnet 0.0162 vgg 0.0164 low 0.055  mix=0.11 0.11 0.11 0.02 0.11 0.10 0.11 0.11 0.11 0.11  3.3 min
+=== 10:33:55 neg.py exact --k 3 --a 1 --b 1 --seed 2
+neg3_x_ratio_a1_b1_rc0.125_seed2         FID=6.71 IS=9.35 k: resnet 0.0374 vgg 0.0368 low 0.062  mix=0.12 0.12 0.09 0.04 0.09 0.09 0.10 0.12 0.11 0.11  18.2 min
+=== 10:52:14 neg.py exact --k 3 --a 1.5 --b 1.5 --pfit band
+neg3_x_ratio_a1.5_b1.5_rc0.125_pband     FID=7.18 IS=8.85 k: resnet 0.0266 vgg 0.0244 low 0.062  mix=0.12 0.12 0.09 0.03 0.09 0.07 0.10 0.13 0.13 0.12  17.1 min
+=== 11:09:23 diag k=3
+arm | colour k (mix alone predicts) | cats kept | non-cats that changed class | dogs kept | rms change low, high | hybrid rate of k: Low(arm)+High(none), Low(none)+High(arm)
+neg3_x_ratio_a1.5_b1.5_rc0.125_pband -0.18 (-0.16) | 0.251 | 0.136 | 0.628 | 0.056 0.055 | 0.086 0.029 | to 0.05 0.04 0.08 0.25 0.10 0.21 0.11 0.07 0.04 0.06
+neg3_x_ratio_a1_b1_rc0.125_pband -0.12 (-0.11) | 0.404 | 0.101 | 0.701 | 0.042 0.045 | 0.086 0.046 | to 0.04 0.02 0.07 0.40 0.08 0.18 0.08 0.05 0.03 0.05
+neg3_x_ratio_a1_b1_rc0.125_phigh -0.11 (-0.09) | 0.436 | 0.093 | 0.747 | 0.042 0.044 | 0.087 0.049 | to 0.04 0.01 0.06 0.44 0.08 0.18 0.08 0.05 0.02 0.04
+neg3_x_ratio_a1_b1_rc0.125_plow  -0.12 (-0.11) | 0.391 | 0.102 | 0.706 | 0.043 0.045 | 0.087 0.044 | to 0.04 0.02 0.06 0.39 0.08 0.18 0.09 0.05 0.03 0.06
+neg3_x_ratio_a1_b1_rc0.125_seed1 -0.12 (-0.11) | 0.412 | 0.108 | 0.689 | 0.042 0.046 | 0.089 0.046 | to 0.03 0.03 0.07 0.41 0.07 0.19 0.07 0.04 0.04 0.04
+neg3_x_ratio_a1_b1_rc0.125_seed2 -0.13 (-0.13) | 0.357 | 0.109 | 0.730 | 0.045 0.047 | 0.090 0.041 | to 0.04 0.04 0.08 0.36 0.06 0.19 0.07 0.07 0.05 0.04

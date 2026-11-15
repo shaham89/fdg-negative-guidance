@@ -1,0 +1,70 @@
+=== 14:51:28 neg.py exact --k 3 --a 1 --b 1 --pfit cal
+Downloading: "https://github.com/toshas/torch-fidelity/releases/download/v0.2.0/weights-inception-2015-12-05-6726825d.pth" to /root/.cache/torch/hub/checkpoints/weights-inception-2015-12-05-6726825d.pth
+neg3_x_ratio_a1_b1_rc0.125_pcal          FID=6.93 IS=8.94 k: resnet 0.0302 vgg 0.0306 low 0.068  mix=0.12 0.12 0.09 0.03 0.09 0.08 0.11 0.13 0.12 0.12  17.2 min
+=== 15:08:46 neg.py exact --k 3 --a 1.5 --b 1.5 --pfit cal
+neg3_x_ratio_a1.5_b1.5_rc0.125_pcal      FID=7.07 IS=8.71 k: resnet 0.0166 vgg 0.0164 low 0.065  mix=0.12 0.12 0.09 0.02 0.09 0.07 0.11 0.13 0.13 0.12  16.5 min
+=== 15:25:23 pmap s=1
+no push: 4000 images in 1.4 min; class shares 0.106 0.111 0.080 0.090 0.086 0.082 0.106 0.120 0.110 0.108
+push size at sigma  80.000: low away 0.0979 toward 0.0979 | high away 0.0203 toward 0.0209
+push size at sigma  57.586: low away 0.1002 toward 0.1028 | high away 0.0186 toward 0.0196
+push size at sigma  40.786: low away 0.1009 toward 0.1072 | high away 0.0180 toward 0.0196
+push size at sigma  28.375: low away 0.0994 toward 0.1097 | high away 0.0176 toward 0.0198
+push size at sigma  19.352: low away 0.0947 toward 0.1082 | high away 0.0172 toward 0.0197
+push size at sigma  12.910: low away 0.0858 toward 0.1015 | high away 0.0169 toward 0.0192
+push size at sigma   8.401: low away 0.0735 toward 0.0916 | high away 0.0170 toward 0.0193
+push size at sigma   5.315: low away 0.0575 toward 0.0832 | high away 0.0185 toward 0.0235
+push size at sigma   3.257: low away 0.0435 toward 0.0768 | high away 0.0229 toward 0.0354
+push size at sigma   1.923: low away 0.0329 toward 0.0644 | high away 0.0282 toward 0.0495
+push size at sigma   1.088: low away 0.0227 toward 0.0443 | high away 0.0288 toward 0.0528
+push size at sigma   0.585: low away 0.0136 toward 0.0245 | high away 0.0235 toward 0.0418
+push size at sigma   0.296: low away 0.0071 toward 0.0113 | high away 0.0154 toward 0.0254
+push size at sigma   0.140: low away 0.0033 toward 0.0047 | high away 0.0085 toward 0.0125
+push size at sigma   0.060: low away 0.0014 toward 0.0017 | high away 0.0042 toward 0.0054
+push size at sigma   0.023: low away 0.0005 toward 0.0005 | high away 0.0023 toward 0.0025
+push size at sigma   0.008: low away 0.0002 toward 0.0002 | high away 0.0010 toward 0.0010
+push size at sigma   0.002: low away 0.0000 toward 0.0000 | high away 0.0003 toward 0.0003
+low  away   steps  0- 1 sigma  80.000-57.586: flip 0.099 (vgg 0.093) changed 0.099 other 0.099 | rms low 0.0213 high 0.0171 | low reader k 0.543 -> 0.521  85 s
+low  away   steps  2- 3 sigma  40.786-28.375: flip 0.208 (vgg 0.198) changed 0.208 other 0.208 | rms low 0.0451 high 0.0350 | low reader k 0.543 -> 0.463  77 s
+low  away   steps  4- 5 sigma  19.352-12.910: flip 0.402 (vgg 0.387) changed 0.402 other 0.402 | rms low 0.0805 high 0.0628 | low reader k 0.543 -> 0.372  70 s
+low  away   steps  6- 7 sigma   8.401- 5.315: flip 0.557 (vgg 0.533) changed 0.557 other 0.557 | rms low 0.0911 high 0.0782 | low reader k 0.543 -> 0.289  62 s
+low  away   steps  8- 9 sigma   3.257- 1.923: flip 0.363 (vgg 0.340) changed 0.363 other 0.363 | rms low 0.0456 high 0.0467 | low reader k 0.543 -> 0.405  54 s
+low  away   steps 10-11 sigma   1.088- 0.585: flip 0.091 (vgg 0.058) changed 0.091 other 0.091 | rms low 0.0123 high 0.0102 | low reader k 0.543 -> 0.514  47 s
+low  away   steps 12-13 sigma   0.296- 0.140: flip 0.016 (vgg 0.007) changed 0.016 other 0.016 | rms low 0.0034 high 0.0018 | low reader k 0.543 -> 0.540  39 s
+low  away   steps 14-15 sigma   0.060- 0.023: flip 0.002 (vgg 0.002) changed 0.002 other 0.002 | rms low 0.0007 high 0.0003 | low reader k 0.543 -> 0.543  31 s
+low  away   steps 16-17 sigma   0.008- 0.002: flip 0.001 (vgg 0.001) changed 0.001 other 0.001 | rms low 0.0001 high 0.0001 | low reader k 0.543 -> 0.544  22 s
+low  away   steps  0-17 sigma  80.000- 0.002: flip 0.888 (vgg 0.874) changed 0.888 other 0.888 | rms low 0.2346 high 0.1366 | low reader k 0.543 -> 0.088  144 s
+low  toward steps  0- 1 sigma  80.000-57.586: flip 0.015 (vgg 0.022) changed 0.068 other 0.053 | rms low 0.0191 high 0.0143 | low reader k 0.061 -> 0.069  85 s
+low  toward steps  2- 3 sigma  40.786-28.375: flip 0.034 (vgg 0.038) changed 0.138 other 0.103 | rms low 0.0408 high 0.0288 | low reader k 0.061 -> 0.079  77 s
+low  toward steps  4- 5 sigma  19.352-12.910: flip 0.069 (vgg 0.072) changed 0.239 other 0.169 | rms low 0.0684 high 0.0483 | low reader k 0.061 -> 0.091  70 s
+low  toward steps  6- 7 sigma   8.401- 5.315: flip 0.154 (vgg 0.155) changed 0.382 other 0.229 | rms low 0.0882 high 0.0702 | low reader k 0.061 -> 0.141  62 s
+low  toward steps  8- 9 sigma   3.257- 1.923: flip 0.159 (vgg 0.161) changed 0.366 other 0.207 | rms low 0.0672 high 0.0612 | low reader k 0.061 -> 0.180  54 s
+low  toward steps 10-11 sigma   1.088- 0.585: flip 0.029 (vgg 0.038) changed 0.090 other 0.062 | rms low 0.0241 high 0.0184 | low reader k 0.061 -> 0.117  47 s
+low  toward steps 12-13 sigma   0.296- 0.140: flip 0.003 (vgg 0.012) changed 0.012 other 0.009 | rms low 0.0053 high 0.0029 | low reader k 0.061 -> 0.068  39 s
+low  toward steps 14-15 sigma   0.060- 0.023: flip 0.000 (vgg 0.011) changed 0.002 other 0.002 | rms low 0.0008 high 0.0004 | low reader k 0.061 -> 0.061  31 s
+low  toward steps 16-17 sigma   0.008- 0.002: flip 0.000 (vgg 0.011) changed 0.001 other 0.001 | rms low 0.0001 high 0.0001 | low reader k 0.061 -> 0.061  22 s
+low  toward steps  0-17 sigma  80.000- 0.002: flip 0.578 (vgg 0.587) changed 0.812 other 0.233 | rms low 0.1996 high 0.1207 | low reader k 0.061 -> 0.464  145 s
+high away   steps  0- 1 sigma  80.000-57.586: flip 0.004 (vgg 0.004) changed 0.004 other 0.004 | rms low 0.0011 high 0.0013 | low reader k 0.543 -> 0.544  85 s
+high away   steps  2- 3 sigma  40.786-28.375: flip 0.014 (vgg 0.011) changed 0.014 other 0.014 | rms low 0.0026 high 0.0031 | low reader k 0.543 -> 0.541  77 s
+high away   steps  4- 5 sigma  19.352-12.910: flip 0.051 (vgg 0.042) changed 0.051 other 0.051 | rms low 0.0071 high 0.0087 | low reader k 0.543 -> 0.531  70 s
+high away   steps  6- 7 sigma   8.401- 5.315: flip 0.155 (vgg 0.144) changed 0.155 other 0.155 | rms low 0.0180 high 0.0249 | low reader k 0.543 -> 0.476  62 s
+high away   steps  8- 9 sigma   3.257- 1.923: flip 0.228 (vgg 0.203) changed 0.228 other 0.228 | rms low 0.0197 high 0.0373 | low reader k 0.543 -> 0.484  54 s
+high away   steps 10-11 sigma   1.088- 0.585: flip 0.127 (vgg 0.097) changed 0.127 other 0.127 | rms low 0.0075 high 0.0254 | low reader k 0.543 -> 0.539  47 s
+high away   steps 12-13 sigma   0.296- 0.140: flip 0.069 (vgg 0.033) changed 0.069 other 0.069 | rms low 0.0017 high 0.0109 | low reader k 0.543 -> 0.543  39 s
+high away   steps 14-15 sigma   0.060- 0.023: flip 0.015 (vgg 0.006) changed 0.015 other 0.015 | rms low 0.0004 high 0.0035 | low reader k 0.543 -> 0.544  31 s
+high away   steps 16-17 sigma   0.008- 0.002: flip 0.002 (vgg 0.002) changed 0.002 other 0.002 | rms low 0.0000 high 0.0007 | low reader k 0.543 -> 0.544  22 s
+high away   steps  0-17 sigma  80.000- 0.002: flip 0.442 (vgg 0.412) changed 0.442 other 0.442 | rms low 0.0445 high 0.0815 | low reader k 0.543 -> 0.397  144 s
+high toward steps  0- 1 sigma  80.000-57.586: flip 0.001 (vgg 0.011) changed 0.004 other 0.004 | rms low 0.0012 high 0.0013 | low reader k 0.061 -> 0.061  85 s
+high toward steps  2- 3 sigma  40.786-28.375: flip 0.003 (vgg 0.012) changed 0.012 other 0.009 | rms low 0.0026 high 0.0030 | low reader k 0.061 -> 0.063  77 s
+high toward steps  4- 5 sigma  19.352-12.910: flip 0.008 (vgg 0.017) changed 0.032 other 0.024 | rms low 0.0056 high 0.0068 | low reader k 0.061 -> 0.069  70 s
+high toward steps  6- 7 sigma   8.401- 5.315: flip 0.028 (vgg 0.036) changed 0.093 other 0.064 | rms low 0.0149 high 0.0207 | low reader k 0.061 -> 0.074  62 s
+high toward steps  8- 9 sigma   3.257- 1.923: flip 0.075 (vgg 0.078) changed 0.198 other 0.123 | rms low 0.0264 high 0.0494 | low reader k 0.061 -> 0.105  54 s
+high toward steps 10-11 sigma   1.088- 0.585: flip 0.098 (vgg 0.100) changed 0.242 other 0.144 | rms low 0.0149 high 0.0489 | low reader k 0.061 -> 0.082  47 s
+high toward steps 12-13 sigma   0.296- 0.140: flip 0.027 (vgg 0.031) changed 0.100 other 0.073 | rms low 0.0030 high 0.0188 | low reader k 0.061 -> 0.061  39 s
+high toward steps 14-15 sigma   0.060- 0.023: flip 0.002 (vgg 0.012) changed 0.013 other 0.011 | rms low 0.0005 high 0.0047 | low reader k 0.061 -> 0.061  31 s
+high toward steps 16-17 sigma   0.008- 0.002: flip 0.000 (vgg 0.011) changed 0.002 other 0.002 | rms low 0.0000 high 0.0008 | low reader k 0.061 -> 0.061  22 s
+high toward steps  0-17 sigma  80.000- 0.002: flip 0.571 (vgg 0.535) changed 0.795 other 0.225 | rms low 0.0494 high 0.0984 | low reader k 0.061 -> 0.172  144 s
+PMAP DONE 45.2 min
+=== 16:10:42 diag k=3
+arm | colour k (mix alone predicts) | cats kept | non-cats that changed class | dogs kept | rms change low, high | hybrid rate of k: Low(arm)+High(none), Low(none)+High(arm)
+neg3_x_ratio_a1.5_b1.5_rc0.125_pcal -0.17 (-0.16) | 0.158 | 0.134 | 0.628 | 0.059 0.056 | 0.084 0.020 | to 0.06 0.04 0.09 0.16 0.10 0.22 0.12 0.09 0.05 0.06
+neg3_x_ratio_a1_b1_rc0.125_pcal  -0.12 (-0.12) | 0.293 | 0.100 | 0.710 | 0.046 0.049 | 0.086 0.037 | to 0.05 0.01 0.08 0.29 0.10 0.22 0.09 0.06 0.04 0.06
